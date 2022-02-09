@@ -21,7 +21,6 @@ Gen 3
 - Menu Advance Channel RTC Searcher
 - PID to IV Wild Searcher (For Spinda)
 
-
 Gen 4
 - Manaphy Reroll Generator/Searcher
 - Basic Bug Catching Contest/Safari Zone Searcher
