@@ -1,6 +1,4 @@
 # Finder-ToolBox
-
-or
 # [Download](https://ci.appveyor.com/project/Lincoln-LM/finder-toolbox)
 
 # Additional ToolBox Features
