@@ -89,6 +89,7 @@ set(PROJECT_UI
     Gen5/Profile/ProfileEditor5.ui
     Gen5/Profile/ProfileManager5.ui
     Gen5/Static5.ui
+    Gen6/Tools/TinyMTSeedFinder.ui
     Gen8/DenMap.ui
     Gen8/Eggs8.ui
     Gen8/Event8.ui
@@ -154,6 +155,7 @@ set(PROJECT_SOURCES
     Gen5/Profile/ProfileEditor5.cpp
     Gen5/Profile/ProfileManager5.cpp
     Gen5/Static5.cpp
+    Gen6/Tools/TinyMTSeedFinder.cpp
     Gen8/DenMap.cpp
     Gen8/Eggs8.cpp
     Gen8/Event8.cpp

@@ -48,6 +48,7 @@
 #include <Forms/Gen5/Profile/ProfileCalibrator5.hpp>
 #include <Forms/Gen5/Profile/ProfileManager5.hpp>
 #include <Forms/Gen5/Static5.hpp>
+#include <Forms/Gen6/Tools/TinyMTSeedFinder.hpp>
 #include <Forms/Gen8/DenMap.hpp>
 #include <Forms/Gen8/Eggs8.hpp>
 #include <Forms/Gen8/Event8.hpp>
@@ -154,6 +155,8 @@ void MainWindow::setupModels()
     connect(ui->pushButtonIDs5, &QPushButton::clicked, this, &MainWindow::openIDs5);
     connect(ui->actionProfileCalibrator, &QAction::triggered, this, &MainWindow::openProfileCalibrator);
     connect(ui->actionProfileManager5, &QAction::triggered, this, &MainWindow::openProfileManager5);
+
+    connect(ui->actionTinyMTSeedFinder, &QAction::triggered, this, &MainWindow::openTinyMTSeedFinder);
 
     connect(ui->pushButtonStatic8, &QPushButton::clicked, this, &MainWindow::openStatic8);
     connect(ui->pushButtonWild8, &QPushButton::clicked, this, &MainWindow::openWild8);
@@ -590,6 +593,12 @@ void MainWindow::openProfileManager5()
     auto *manager = new ProfileManager5();
     connect(manager, &ProfileManager5::updateProfiles, this, [=] { updateProfiles(5); });
     manager->show();
+}
+
+void MainWindow::openTinyMTSeedFinder()
+{
+    auto *finder = new TinyMTSeedFinder();
+    finder->show();
 }
 
 void MainWindow::openStatic8()

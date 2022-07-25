@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>358</width>
-    <height>292</height>
+    <width>430</width>
+    <height>293</height>
    </rect>
   </property>
   <property name="windowIcon">
@@ -18,6 +18,9 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
       <widget class="QWidget" name="tabGen3">
        <attribute name="title">
         <string>Gen 3</string>
@@ -215,8 +218,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>358</width>
-     <height>22</height>
+     <width>430</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
@@ -273,9 +276,16 @@
     <addaction name="actionDownloadEventData"/>
     <addaction name="actionProfileManager8"/>
    </widget>
+   <widget class="QMenu" name="menuGen6Tools">
+    <property name="title">
+     <string>Gen 6 Tools</string>
+    </property>
+    <addaction name="actionTinyMTSeedFinder"/>
+   </widget>
    <addaction name="menuGen3Tools"/>
    <addaction name="menuGen4Tools"/>
    <addaction name="menuGen5Tools"/>
+   <addaction name="menuGen6Tools"/>
    <addaction name="menuGen8Tools"/>
    <addaction name="menuTools"/>
   </widget>
@@ -392,6 +402,11 @@
   <action name="actionProfileManager8">
    <property name="text">
     <string>Profile Manager</string>
+   </property>
+  </action>
+  <action name="actionTinyMTSeedFinder">
+   <property name="text">
+    <string>TinyMT Seed Finder</string>
    </property>
   </action>
  </widget>

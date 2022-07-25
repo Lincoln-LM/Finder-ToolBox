@@ -4,7 +4,7 @@ include_directories("${CMAKE_SOURCE_DIR}/Externals")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(SIMD on)
+set(SIMD off)
 
 if (SIMD)
     add_definitions(-DSIMD)
@@ -80,6 +80,7 @@ add_library(PokeFinderCore STATIC
     Gen5/Searchers/IDSearcher5.cpp
     Gen5/Searchers/ProfileSearcher5.cpp
     Gen5/Searchers/StaticSearcher5.cpp
+    Gen6/Searchers/TinyMTSeedSearcher.cpp
     Gen8/DenLoader.cpp
     Gen8/EncounterArea8.cpp
     Gen8/Encounters8.cpp

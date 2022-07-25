@@ -117,6 +117,7 @@ private slots:
     void openIDs5();
     void openProfileCalibrator();
     void openProfileManager5();
+    void openTinyMTSeedFinder();
     void openStatic8();
     void openWild8();
     void openEvent8();
