@@ -1,4 +1,4 @@
-# PokéFinder
+# PokéFinder + TinyMT Blink Search
 
 Join the PokéFinder Discord server to talk about development and contribute.
 
