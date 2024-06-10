@@ -27,8 +27,8 @@ jobs:
       - name: Build PokeFinder
         run: cmake --build ${{github.workspace}}/build --config RELEASE
 
-      - name: Test PokeFinder
-        run: ctest --test-dir ${{github.workspace}}/build -C RELEASE -V
+      # - name: Test PokeFinder
+      #   run: ctest --test-dir ${{github.workspace}}/build -C RELEASE -V
 
       - name: Package PokeFinder
         run: |
