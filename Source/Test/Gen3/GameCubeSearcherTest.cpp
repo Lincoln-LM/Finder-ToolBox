@@ -65,9 +65,9 @@ void GameCubeSearcherTest::searchChannel_data()
 
 void GameCubeSearcherTest::searchChannel()
 {
-    // QFETCH(IVs, min);
-    // QFETCH(IVs, max);
-    // QFETCH(int, results);
+    QFETCH(IVs, min);
+    QFETCH(IVs, max);
+    QFETCH(int, results);
 
     // std::array<bool, 25> natures;
     // natures.fill(true);
